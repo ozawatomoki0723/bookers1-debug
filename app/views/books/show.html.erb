@@ -1,0 +1,11 @@
+<%= flash[:book]%><br>
+<tr>
+<strong>Title:</strong>
+<td><%=@book.title %></td>
+</tr><br>
+<tr>
+<strong>Body:</strong>
+<td><%=@book.body %></td>
+</tr><br>
+<%= link_to "edit", edit_book_path(@book.id) %>
+<%= link_to "Back", books_path %>
